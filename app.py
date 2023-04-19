@@ -8,9 +8,9 @@ import av
 RTC_CONFIGURATION = RTCConfiguration(
     {
       "iceServers": [{
-        "urls": ["stun:a.relay.metered.ca:80"]
-        # "username": "1c8984b57b00688cab1ff9ce",
-        # "credential": "NVNrmuBuC6u5mVM/",
+        "urls": ["turn:a.relay.metered.ca:443"],
+        "username": "1c8984b57b00688cab1ff9ce",
+        "credential": "NVNrmuBuC6u5mVM/",
       }]
     }
 )
