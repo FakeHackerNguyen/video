@@ -7,7 +7,7 @@ import av
 
 RTC_CONFIGURATION = RTCConfiguration(
     {
-      "RTCIceServer": [{
+      "iceServers": [{
         "urls": ["turn:a.relay.metered.ca:443?transport=tcp"],
         "username": "1c8984b57b00688cab1ff9ce",
         "credential": "NVNrmuBuC6u5mVM/",
