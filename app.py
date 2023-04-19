@@ -1,10 +1,6 @@
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 import av
 
-# RTC_CONFIGURATION = RTCConfiguration(
-#     {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
-# )
-
 RTC_CONFIGURATION = RTCConfiguration(
     {
       "iceServers": [{
@@ -16,7 +12,7 @@ RTC_CONFIGURATION = RTCConfiguration(
 )
 
 class VideoProcessor:
-    def recv(self, frame: av.VideoFrame) -> av.VideoFrame:
+    def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
         return av.VideoFrame.from_ndarray(img, format="bgr24")
 
