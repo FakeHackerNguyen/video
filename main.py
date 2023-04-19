@@ -1,8 +1,18 @@
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 import av
 
+# RTC_CONFIGURATION = RTCConfiguration(
+#     {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
+# )
+
 RTC_CONFIGURATION = RTCConfiguration(
-    {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
+    {
+      "RTCIceServer": [{
+        "urls": ["turn:a.relay.metered.ca:80"],
+        "username": "1c8984b57b00688cab1ff9ce",
+        "credential": "NVNrmuBuC6u5mVM",
+      }]
+    }
 )
 
 class VideoProcessor:
