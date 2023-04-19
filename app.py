@@ -10,7 +10,7 @@ RTC_CONFIGURATION = RTCConfiguration(
       "RTCIceServer": [{
         "urls": ["turn:a.relay.metered.ca:443?transport=tcp"],
         "username": "1c8984b57b00688cab1ff9ce",
-        "credential": "NVNrmuBuC6u5mVM",
+        "credential": "NVNrmuBuC6u5mVM/",
       }]
     }
 )
